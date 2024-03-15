@@ -697,78 +697,69 @@ body {
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/*Strona Responsywna*/
+
+/* strona responsywna */
 
 @media (min-width: 320px) and (max-width: 767px) {
-    .container {
-        max-width: 288px;
-        padding: 0;
+    img {
+        width: 100%;
     }
-}
-img {
-    width: 100%;
-}
-/* Header */
-.container-mobile {
-    flex-direction: column;
-}
-.navigation {
-    flex-direction: column;
-}
-/* Section 1 */
-.section-one {
-    padding-bottom: 96px;
-    max-width: 100%;
-}
-.main-header {
-    font-size: 36px;
-}
 
-/* Section 2 */
+    /* Header */
 
-.section-two {
-    padding: 0;
-}
-.section-two-list {
-    flex-direction: column;
-}
-.name-header-mobile {
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-}
+    .logo {
+        padding-left: 16px;
+        padding-bottom: 16px;
+        padding-top: 16px;
+    }
 
-.benefits-item {
-    gap: 72px;
-    width: 100%;
-}
-.icons {
-    position: absolute;
-}
-.paragraph {
-    font-weight: 500;
-}
-/* Section 3 */
+    /* Dodać menu hamburger */
 
-.section-three {
-    padding: 96px 0px;
-    max-width: 100%;
-}
-.team-list {
-    flex-direction: column;
-    width: 100%;
-    gap: 72px;
-}
+    /* Sekcja 1 */
 
-.section-four {
-    padding-bottom: 96px;
-}
-.portfolio-list {
-    flex-direction: column;
-    width: 100%;
-}
-.portfolio-item {
-    width: 100%;
+    .section-one {
+        width: 100%;
+        gap: 72px;
+        display: flex;
+        justify-content: center;
+    }
+    .title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 111%;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+    /* Sekcja 2 */
+    .section-two {
+    }
+    .section-two-list {
+        flex-direction: column;
+        width: 100%;
+        padding: 16;
+    }
+    .benefits-item {
+    }
+
+    /* Sekcja 3 */
+    .section-three {
+    }
+    .team-list {
+        flex-direction: column;
+    }
+
+    /* Sekcja 4 */
+    .section-four {
+        flex-direction: column;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        gap: 72px;
+    }
+
+    /* Modal */
 }
 @media (min-width: 768px) and (max-width: 1157px) {
 }
