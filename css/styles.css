@@ -534,6 +534,11 @@ body {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.containermodal.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
 .modal-box {
     position: absolute;
     top: 50%;
@@ -701,19 +706,96 @@ body {
 /* strona responsywna */
 
 @media (min-width: 320px) and (max-width: 767px) {
-    img {
+    /* menu hamburger */
+    .off-screen-menu {
+        background-color: #f4f4fd;
+        height: 100vh;
         width: 100%;
+        max-width: 450px;
+        position: fixed;
+        top: 0;
+        right: -450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3rem;
+        transition: 0.3s ease;
+    }
+    .off-screen-menu:active {
+        right: 0;
+    }
+    nav {
+        padding: 1rem;
+        display: flex;
+        background-color: #ffffff;
+    }
+    .ham-menu {
+        height: 50px;
+        width: 50px;
+        margin-left: auto;
+        position: relative;
+    }
+    .ham-menu span {
+        height: 5px;
+        width: 100%;
+        background-color: #2e2f42;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.3s ease;
+    }
+    .ham-menu span:nth-child(1) {
+        top: 25%;
+    }
+    .ham-menu span:nth-child(3) {
+        top: 75%;
+    }
+    .hamburger.is-open-ham {
+        transform: translateX(0);
+    }
+    .ham-menu:active span:nth-child(1) {
+        top: 50%;
+        transform: translate(50%, 50%);
+    }
+    .ham-menu:active span:nth-child(2) {
+        opacity: 0;
+    }
+    .ham-menu:active span:nth-child(3) {
+        top: 50%;
+        transform: translate(50%, 50%);
     }
 
+    img {
+        max-width: 100%;
+    }
     /* Header */
-
+    .header {
+    }
     .logo {
+        display: none;
+    }
+
+    .logo-hamburger {
         padding-left: 16px;
         padding-bottom: 16px;
         padding-top: 16px;
-    }
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #4d5ae5;
+        margin-right: 76px;
+        padding: 24px 0;
 
-    /* Dodać menu hamburger */
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
     /* Sekcja 1 */
 
@@ -729,16 +811,33 @@ body {
         line-height: 111%;
         letter-spacing: 0.02em;
         text-align: center;
+        max-width: 496px;
+        margin: 0 auto;
+        margin-bottom: 48px;
     }
     /* Sekcja 2 */
-    .section-two {
+
+    .icons {
+        visibility: hidden;
     }
     .section-two-list {
         flex-direction: column;
         width: 100%;
-        padding: 16;
+        gap: 96;
     }
     .benefits-item {
+    }
+
+    .paragraph {
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .name-header {
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
     }
 
     /* Sekcja 3 */
@@ -756,7 +855,27 @@ body {
     /* Footer */
     .footer-container {
         flex-direction: column;
+        align-items: center;
         gap: 72px;
+    }
+    .text {
+        display: block;
+    }
+    .footer-mail {
+        align-items: center;
+    }
+    .footer-form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .socialmedia-footer {
+        text-align: center;
+    }
+    .subscribe {
+        text-align: center;
+    }
+    .is-hidden {
+        display: none;
     }
 
     /* Modal */
