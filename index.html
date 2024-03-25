@@ -2,47 +2,46 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta name="description" content="Web studio company" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Web Studio</title>
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
         />
+        <link rel="stylesheet" href="./css/styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet"
         />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://github.com/sindresorhus/modern-normalize.git"
-        />
-        <link rel="stylesheet" href="./css/styles.css" />
-        <title>Document</title>
     </head>
     <body>
         <header class="header">
-            <div class="container">
+            <!--header left-->
+            <div class="header-container container">
                 <nav class="navigation">
                     <a href="./index.html" class="logo"
-                        >Web<span class="blue">Studio</span></a
-                    >
-                    <ul class="nav-list is-hidden is-open">
+                        >Web<span class="logo-color">Studio</span>
+                    </a>
+                    <ul class="header-left is-open">
                         <li>
                             <a href="./index.html" class="link current"
                                 >Studio</a
                             >
                         </li>
-                        <li><a href="" class="link">Portfolio</a></li>
-                        <li><a href="" class="link">Contacts</a></li>
+                        <li>
+                            <a href="" class="link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="" class="link">Contacts</a>
+                        </li>
                     </ul>
                 </nav>
-                <address>
-                    <ul class="address-list is-hidden is-open">
+                <!--Right navi-->
+                <address class="address">
+                    <ul class="address-list is-open">
                         <li>
                             <a
                                 href="mailto:info@devstudio.com"
@@ -51,96 +50,227 @@
                             >
                         </li>
                         <li>
-                            <a href="tel:+110001111111" class="address-link"
-                                >+11 (000) 111-11-11</a
+                            <a href="tel:+110001111111" class="address-link">
+                                +11 (000) 111-11-11</a
                             >
                         </li>
                     </ul>
                 </address>
+                <button class="icon-ham">
+                    <svg class="icon-ham" width="24" height="24">
+                        <use href="./images/icons.svg#icon-ham"></use>
+                    </svg>
+                </button>
             </div>
-            <div class="hamburger is-open-ham">
-                <div class="off-screen-menu">
-                    <a href="./index.html" class="logo-hamburger"
-                                >Web<span class="blue">Studio</span></a
+            <!-- hamburger-menu -->
+            <div class="hamburger-menu ham-is-open">
+                <button type="button" class="close-button">
+                    <svg class="icon-form-close" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <div class="left-side-navi">
+                    <ul class="left-navi-list ham">
+                        <li>
+                            <a href="./index.html" class="link ham current"
+                                >Studio</a
                             >
-                    <ul>
-                        <li>Studio</li>
-                        <li>Portfolio</li>
-                        <li>Contacts</li>
+                        </li>
+                        <li>
+                            <a href="" class="link ham">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="" class="link ham">Contacts</a>
+                        </li>
                     </ul>
                 </div>
-
-                <nav>
-                    <div class="ham-menu">
-                        <span></span><span></span><span></span>
-                    </div>
-                </nav>
+                <div class="social-menu-set">
+                    <ul class="address-list ham">
+                        <li>
+                            <a
+                                href="mailto:info@devstudio.com"
+                                class="address-link ham"
+                                >info@devstudio.com</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="tel:+110001111111"
+                                class="address-link ham"
+                            >
+                                +11 (000) 111-11-11</a
+                            >
+                        </li>
+                    </ul>
+                    <ul class="social-media-menu ham">
+                        <li class="icon">
+                            <a
+                                href="https://www.instagram.com/"
+                                class="social-media-link footer-link"
+                                target="_blank"
+                            >
+                                <svg
+                                    class="icon-socials sm-footer"
+                                    width="24"
+                                    height="24"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-instagram"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icon">
+                            <a
+                                href="https://www.twitter.com/"
+                                class="social-media-link footer-link"
+                                target="_blank"
+                            >
+                                <svg
+                                    class="icon-socials sm-footer"
+                                    width="24"
+                                    height="24"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-twitter"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icon">
+                            <a
+                                href="https://www.facebook.com/"
+                                class="social-media-link footer-link"
+                                target="_blank"
+                            >
+                                <svg
+                                    class="icon-socials sm-footer"
+                                    width="24"
+                                    height="24"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-facebook"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icon">
+                            <a
+                                href="https://www.linkedin.com/"
+                                class="social-media-link footer-link"
+                                target="_blank"
+                            >
+                                <svg
+                                    class="icon-socials sm-footer"
+                                    width="24"
+                                    height="24"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-linkedin"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
         <main>
-            <section class="section-one">
+            <!--Section 1-->
+            <section class="blue-box">
                 <div class="container">
-                    <h1 class="title">Effective Solutions for Your Business</h1>
-                    <button type="button" class="button">Order Service</button>
+                    <h1 class="main-header">
+                        Effective Solutions for Your Business
+                    </h1>
+                    <button type="button" class="button-click" data-modal-open>
+                        Order Service
+                    </button>
                 </div>
             </section>
-            <section class="section-two">
+            <!--Section 2-->
+            <section class="goals-columns">
                 <div class="container">
-                    <h2 class="visually-hidden">benefits</h2>
-                    <ul class="section-two-list">
-                        <li class="benefits-item">
-                            <div class="icons">
-                                <svg width="64" height="64">
+                    <h2 class="visually-hidden">4 columns</h2>
+                    <ul class="goals-list">
+                        <li class="goals-item">
+                            <div class="goals-symbols">
+                                <svg
+                                    class="goals-symbols-icon"
+                                    width="64"
+                                    height="64"
+                                >
                                     <use
-                                        href="./images/icons.svg#icon-antenna"
-                                    />
+                                        href="./images/icons.svg#icon-strategy"
+                                    ></use>
                                 </svg>
                             </div>
-                            <h3 class="name-header">Strategy</h3>
-                            <p class="paragraph">
+                            <h3 class="list-titles mobile-h2 desktop-h3">
+                                Strategy
+                            </h3>
+                            <p class="goals">
                                 Our goal is to identify the business problem to
                                 walk away with the perfect and creative
                                 solution.
                             </p>
                         </li>
-                        <li class="benefits-item">
-                            <div class="icons">
-                                <svg width="64" height="64">
-                                    <use href="./images/icons.svg#icon-clock" />
+                        <li class="goals-item">
+                            <div class="goals-symbols">
+                                <svg
+                                    class="goals-symbols-icon"
+                                    width="64"
+                                    height="64"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-punctuality"
+                                    ></use>
                                 </svg>
                             </div>
-                            <h3 class="name-header">Punctuality</h3>
-                            <p class="paragraph">
+                            <h3 class="list-titles mobile-h2 desktop-h3">
+                                Punctuality
+                            </h3>
+                            <p class="goals">
                                 Bring the key message to the brand's audience
                                 for the best price within the shortest possible
                                 time.
                             </p>
                         </li>
-                        <li class="benefits-item">
-                            <div class="icons">
-                                <svg width="64" height="64">
+                        <li class="goals-item">
+                            <div class="goals-symbols">
+                                <svg
+                                    class="goals-symbols-icon"
+                                    width="64"
+                                    height="64"
+                                >
                                     <use
-                                        href="./images/icons.svg#icon-diagram"
-                                    />
+                                        href="./images/icons.svg#icon-diligence"
+                                    ></use>
                                 </svg>
                             </div>
-                            <h3 class="name-header">Diligence</h3>
-                            <p class="paragraph">
+                            <h3 class="list-titles mobile-h2 desktop-h3">
+                                Diligence
+                            </h3>
+                            <p class="goals">
                                 Research and confirm brands that present the
                                 strongest digital growth opportunities and
                                 minimize risk.
                             </p>
                         </li>
-                        <li class="benefits-item">
-                            <div class="icons">
-                                <svg width="64" height="64">
+                        <li class="goals-item">
+                            <div class="goals-symbols">
+                                <svg
+                                    class="goals-symbols-icon"
+                                    width="64"
+                                    height="64"
+                                >
                                     <use
-                                        href="./images/icons.svg#icon-astronaut"
-                                    />
+                                        href="./images/icons.svg#icon-technologies"
+                                    ></use>
                                 </svg>
                             </div>
-                            <h3 class="name-header">Technologies</h3>
-                            <p class="paragraph">
+                            <h3 class="list-titles mobile-h2 desktop-h3">
+                                Technologies
+                            </h3>
+                            <p class="goals">
                                 Design practice focused on digital experiences.
                                 We bring forth a deep passion for
                                 problem-solving.
@@ -149,328 +279,349 @@
                     </ul>
                 </div>
             </section>
-            <section class="section-three">
+            <!--Section 3-->
+            <section class="team-background">
                 <div class="container">
-                    <h2 class="section-header">Our Team</h2>
-                    <ul class="team-list">
-                        <li class="team-list-box">
+                    <h2 class="header-titles">Our Team</h2>
+                    <ul class="person-list">
+                        <li class="person-card">
                             <img
                                 srcset="
-                                    ./images/markguerrero.jpg 1x,
-                                    ./images/markguerrero_x2  2x
+                                    ./images/man3.jpg    1x,
+                                    ./images/man3@2x.jpg 2x
                                 "
-                                src="./images/markguerrero.jpg"
+                                src="./images/man3.jpg"
+                                alt="Man3"
                                 width="264"
-                                alt="Mark Guerrero Product Designer"
+                                height="260"
                             />
-                            <div class="names">
-                                <h3 class="name-header">Mark Guerrero</h3>
-                                <p class="paragraph">Product Designer</p>
-                                <ul class="social-media-icons">
-                                    <li class="socialmedia-size">
+                            <div class="card">
+                                <h3 class="list-titles">Mark Guerrero</h3>
+                                <p class="function">Product Designer</p>
+                                <ul class="icon-set-sm">
+                                    <li class="icon">
                                         <a
-                                            class="socialmedia-link"
                                             href="https://www.instagram.com/"
+                                            class="social-media-link"
+                                            target="_blank"
                                         >
                                             <svg
-                                                class="sm-style"
+                                                class="icon-socials"
                                                 width="16"
                                                 height="16"
                                             >
                                                 <use
                                                     href="./images/icons.svg#icon-instagram"
-                                                />
+                                                ></use>
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="socialmedia-size">
+                                    <li class="icon">
                                         <a
-                                            class="socialmedia-link"
-                                            href="https://www.instagram.com/"
+                                            href="https://www.twitter.com/"
+                                            class="social-media-link"
+                                            target="_blank"
                                         >
                                             <svg
-                                                class="sm-style"
+                                                class="icon-socials"
                                                 width="16"
                                                 height="16"
                                             >
                                                 <use
                                                     href="./images/icons.svg#icon-twitter"
-                                                />
+                                                ></use>
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="socialmedia-size">
+                                    <li class="icon">
                                         <a
-                                            class="socialmedia-link"
-                                            href="https://www.instagram.com/"
+                                            href="https://www.facebook.com/"
+                                            class="social-media-link"
+                                            target="_blank"
                                         >
                                             <svg
-                                                class="sm-style"
+                                                class="icon-socials"
                                                 width="16"
                                                 height="16"
                                             >
                                                 <use
                                                     href="./images/icons.svg#icon-facebook"
-                                                />
+                                                ></use>
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="socialmedia-size">
+                                    <li class="icon">
                                         <a
-                                            class="socialmedia-link"
-                                            href="https://www.instagram.com/"
+                                            href="https://www.linkedin.com/"
+                                            class="social-media-link"
+                                            target="_blank"
                                         >
                                             <svg
-                                                class="sm-style"
+                                                class="icon-socials"
                                                 width="16"
                                                 height="16"
                                             >
                                                 <use
                                                     href="./images/icons.svg#icon-linkedin"
-                                                />
+                                                ></use>
                                             </svg>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
-                        <li class="team-list-box">
+                        <li class="person-card">
                             <img
                                 srcset="
-                                    ./images/tomford.jpg    1x,
-                                    ./images/tomford_x2.jpg 2x
+                                    ./images/man2.jpg    1x,
+                                    ./images/man2@2x.jpg 2x
                                 "
-                                src="./images/tomford.jpg"
-                                alt="Tom Ford Frontend Developer"
+                                src="./images/man2.jpg"
+                                alt="Man2"
                                 width="264"
+                                height="260"
                             />
-                            <div class="names">
-                                <h3 class="name-header">Tom Ford</h3>
-                                <p class="paragraph">Frontend Developer</p>
-                                <ul class="social-media-icons">
-                                    <li class="socialmedia-size">
+                            <div class="card">
+                                <h3 class="list-titles">Tom Ford</h3>
+                                <p class="function">Frontend Developer</p>
+                                <ul class="icon-set-sm">
+                                    <li class="icon">
                                         <a
-                                            class="socialmedia-link"
                                             href="https://www.instagram.com/"
+                                            class="social-media-link"
+                                            target="_blank"
                                         >
                                             <svg
-                                                class="sm-style"
+                                                class="icon-socials"
                                                 width="16"
                                                 height="16"
                                             >
                                                 <use
                                                     href="./images/icons.svg#icon-instagram"
-                                                />
+                                                ></use>
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="socialmedia-size">
+                                    <li class="icon">
                                         <a
-                                            class="socialmedia-link"
-                                            href="https://www.instagram.com/"
+                                            href="https://www.twitter.com/"
+                                            class="social-media-link"
+                                            target="_blank"
                                         >
                                             <svg
-                                                class="sm-style"
+                                                class="icon-socials"
                                                 width="16"
                                                 height="16"
                                             >
                                                 <use
                                                     href="./images/icons.svg#icon-twitter"
-                                                />
+                                                ></use>
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="socialmedia-size">
+                                    <li class="icon">
                                         <a
-                                            class="socialmedia-link"
-                                            href="https://www.instagram.com/"
+                                            href="https://www.facebook.com/"
+                                            class="social-media-link"
+                                            target="_blank"
                                         >
                                             <svg
-                                                class="sm-style"
+                                                class="icon-socials"
                                                 width="16"
                                                 height="16"
                                             >
                                                 <use
                                                     href="./images/icons.svg#icon-facebook"
-                                                />
+                                                ></use>
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="socialmedia-size">
+                                    <li class="icon">
                                         <a
-                                            class="socialmedia-link"
-                                            href="https://www.instagram.com/"
+                                            href="https://www.linkedin.com/"
+                                            class="social-media-link"
+                                            target="_blank"
                                         >
                                             <svg
-                                                class="sm-style"
+                                                class="icon-socials"
                                                 width="16"
                                                 height="16"
                                             >
                                                 <use
                                                     href="./images/icons.svg#icon-linkedin"
-                                                />
+                                                ></use>
                                             </svg>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
-                        <li class="team-list-box">
+                        <li class="person-card">
                             <img
                                 srcset="
-                                    ./images/camilagarcia.jpg    1x,
-                                    ./images/camilagarcia_x2.jpg 2x
+                                    ./images/woman1.jpg    1x,
+                                    ./images/woman1@2x.jpg 2x
                                 "
-                                src="./images/camilagarcia.jpg"
-                                alt="Camila Garcia Marketing"
+                                src="./images/woman1.jpg"
+                                alt="Woman"
                                 width="264"
+                                height="260"
                             />
-                            <div class="names">
-                                <h3 class="name-header">Camila Garcia</h3>
-                                <p class="paragraph">Marketing</p>
-                                <ul class="social-media-icons">
-                                    <li class="socialmedia-size">
+                            <div class="card">
+                                <h3 class="list-titles">Camila Garcia</h3>
+                                <p class="function">Marketing</p>
+                                <ul class="icon-set-sm">
+                                    <li class="icon">
                                         <a
-                                            class="socialmedia-link"
                                             href="https://www.instagram.com/"
+                                            class="social-media-link"
+                                            target="_blank"
                                         >
                                             <svg
-                                                class="sm-style"
+                                                class="icon-socials"
                                                 width="16"
                                                 height="16"
                                             >
                                                 <use
                                                     href="./images/icons.svg#icon-instagram"
-                                                />
+                                                ></use>
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="socialmedia-size">
+                                    <li class="icon">
                                         <a
-                                            class="socialmedia-link"
-                                            href="https://www.instagram.com/"
+                                            href="https://www.twitter.com/"
+                                            class="social-media-link"
+                                            target="_blank"
                                         >
                                             <svg
-                                                class="sm-style"
+                                                class="icon-socials"
                                                 width="16"
                                                 height="16"
                                             >
                                                 <use
                                                     href="./images/icons.svg#icon-twitter"
-                                                />
+                                                ></use>
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="socialmedia-size">
+                                    <li class="icon">
                                         <a
-                                            class="socialmedia-link"
-                                            href="https://www.instagram.com/"
+                                            href="https://www.facebook.com/"
+                                            class="social-media-link"
+                                            target="_blank"
                                         >
                                             <svg
-                                                class="sm-style"
+                                                class="icon-socials"
                                                 width="16"
                                                 height="16"
                                             >
                                                 <use
                                                     href="./images/icons.svg#icon-facebook"
-                                                />
+                                                ></use>
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="socialmedia-size">
+                                    <li class="icon">
                                         <a
-                                            class="socialmedia-link"
-                                            href="https://www.instagram.com/"
+                                            href="https://www.linkedin.com/"
+                                            class="social-media-link"
+                                            target="_blank"
                                         >
                                             <svg
-                                                class="sm-style"
+                                                class="icon-socials"
                                                 width="16"
                                                 height="16"
                                             >
                                                 <use
                                                     href="./images/icons.svg#icon-linkedin"
-                                                />
+                                                ></use>
                                             </svg>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
-                        <li class="team-list-box">
+                        <li class="person-card">
                             <img
                                 srcset="
-                                    ./images/danielwilson.jpg 1x,
-                                    ./images/danielwilson_x2  2x
+                                    ./images/man1.jpg    1x,
+                                    ./images/man1@2x.jpg 2x
                                 "
-                                src="./images/danielwilson.jpg"
-                                alt="Daniel Wilson UI Designer"
+                                src="./images/man1.jpg"
+                                alt="Man1"
                                 width="264"
+                                height="260"
                             />
-                            <div class="names">
-                                <h3 class="name-header">Daniel Wilson</h3>
-                                <p class="paragraph">UI Designer</p>
-                                <ul class="social-media-icons">
-                                    <li class="socialmedia-size">
+                            <div class="card">
+                                <h3 class="list-titles">Daniel Wilson</h3>
+                                <p class="function">UI Designer</p>
+                                <ul class="icon-set-sm">
+                                    <li class="icon">
                                         <a
-                                            class="socialmedia-link"
                                             href="https://www.instagram.com/"
+                                            class="social-media-link"
+                                            target="_blank"
                                         >
                                             <svg
-                                                class="sm-style"
+                                                class="icon-socials"
                                                 width="16"
                                                 height="16"
                                             >
                                                 <use
                                                     href="./images/icons.svg#icon-instagram"
-                                                />
+                                                ></use>
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="socialmedia-size">
+                                    <li class="icon">
                                         <a
-                                            class="socialmedia-link"
-                                            href="https://www.instagram.com/"
+                                            href="https://www.twitter.com/"
+                                            class="social-media-link"
+                                            target="_blank"
                                         >
                                             <svg
-                                                class="sm-style"
+                                                class="icon-socials"
                                                 width="16"
                                                 height="16"
                                             >
                                                 <use
                                                     href="./images/icons.svg#icon-twitter"
-                                                />
+                                                ></use>
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="socialmedia-size">
+                                    <li class="icon">
                                         <a
-                                            class="socialmedia-link"
-                                            href="https://www.instagram.com/"
+                                            href="https://www.facebook.com/"
+                                            class="social-media-link"
+                                            target="_blank"
                                         >
                                             <svg
-                                                class="sm-style"
+                                                class="icon-socials"
                                                 width="16"
                                                 height="16"
                                             >
                                                 <use
                                                     href="./images/icons.svg#icon-facebook"
-                                                />
+                                                ></use>
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="socialmedia-size">
+                                    <li class="icon">
                                         <a
-                                            class="socialmedia-link"
-                                            href="https://www.instagram.com/"
+                                            href="https://www.linkedin.com/"
+                                            class="social-media-link"
+                                            target="_blank"
                                         >
                                             <svg
-                                                class="sm-style"
+                                                class="icon-socials"
                                                 width="16"
                                                 height="16"
                                             >
                                                 <use
                                                     href="./images/icons.svg#icon-linkedin"
-                                                />
+                                                ></use>
                                             </svg>
                                         </a>
                                     </li>
@@ -480,339 +631,472 @@
                     </ul>
                 </div>
             </section>
-            <section class="section-four">
+            <!--Section 4-->
+            <section class="portfolio-grid">
                 <div class="container">
-                    <h2 class="section-header">Our Portfolio</h2>
+                    <h2 class="header-titles">Our Portfolio</h2>
                     <ul class="portfolio-list">
-                        <li class="portfolio-item">
-                            <div class="portfolio-container">
-                                <img
-                                    srcset="
-                                        ./images/bankapp.jpg 1x,
-                                        ./images/banking.jpg 2x
-                                    "
-                                    src="./images/bankapp.jpg"
-                                    width="360"
-                                    alt="bankingapp"
-                                />
-                                <p class="text-transition">
+                        <li class="portfolio-media">
+                            <div class="portfolio-image">
+                                <picture class="portfolio-photo">
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/banking-mobile.jpg    1x,
+                                            ./images/banking-mobile@2x.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/banking-tablet.jpg    1x,
+                                            ./images/banking-tablet@2x.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 1158px)"
+                                        srcset="
+                                            ./images/banking-desktop.jpg    1x,
+                                            ./images/banking-desktop@2x.jpg 2x
+                                        "
+                                    />
+                                    <img
+                                        src="./images/banking-mobile.jpg"
+                                        alt="Layout of a banking app"
+                                    />
+                                </picture>
+                                <p class="inner-text">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
                                     Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App
                                 </p>
                             </div>
-                            <div class="text-item">
-                                <h3 class="name-header">Banking App</h3>
-                                <p class="paragraph">App</p>
+                            <div class="portfolio-card">
+                                <h3 class="list-titles">Banking App</h3>
+                                <p class="description-text">App</p>
                             </div>
                         </li>
-                        <li class="portfolio-item">
-                            <div class="portfolio-container">
-                                <img
-                                    srcset="
-                                        ./images/cashlesspayment.jpg 1x,
-                                        ./images/cashless.jpg        2x
-                                    "
-                                    src="./images/cashlesspayment.jpg"
-                                    alt="cashlesspayment"
-                                    width="360"
-                                />
-                                <p class="text-transition">
+                        <li class="portfolio-media">
+                            <div class="portfolio-image">
+                                <picture class="portfolio-photo">
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/cashless-mobile.jpg    1x,
+                                            ./images/cashless-mobile@2x.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/cashless-tablet.jpg    1x,
+                                            ./images/cashless-tablet@2x.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 1158px)"
+                                        srcset="
+                                            ./images/cashless-desktop.jpg    1x,
+                                            ./images/cashless-desktop@2x.jpg 2x
+                                        "
+                                    />
+                                    <img
+                                        src="./images/cashless-mobile.jpg"
+                                        alt="Mobile payment"
+                                    />
+                                </picture>
+                                <p class="inner-text">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
                                     Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App
                                 </p>
                             </div>
-                            <div class="text-item">
-                                <h3 class="name-header">Cashless Payment</h3>
-                                <p class="paragraph">Marketing</p>
+                            <div class="portfolio-card">
+                                <h3 class="list-titles">Cashless Payment</h3>
+                                <p class="description-text">Marketing</p>
                             </div>
                         </li>
-                        <li class="portfolio-item">
-                            <div class="portfolio-container">
-                                <img
-                                    srcset="
-                                        ./images/meditaionapp.jpg 1x,
-                                        ./images/meditation.jpg   2x
-                                    "
-                                    src="./images/meditaionapp.jpg"
-                                    alt="meditaionapp"
-                                    width="360"
-                                />
-                                <p class="text-transition">
+                        <li class="portfolio-media">
+                            <div class="portfolio-image">
+                                <picture class="portfolio-photo">
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/meditation-mobile.jpg    1x,
+                                            ./images/meditation-mobile@2x.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/meditation-tablet.jpg    1x,
+                                            ./images/meditation-tablet@2x.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 1158px)"
+                                        srcset="
+                                            ./images/meditation-desktop.jpg    1x,
+                                            ./images/meditation-desktop@2x.jpg 2x
+                                        "
+                                    />
+                                    <img
+                                        src="./images/meditation-mobile.jpg"
+                                        alt="Laptop and smartphone with meditation app"
+                                    />
+                                </picture>
+                                <p class="inner-text">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
                                     Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App
                                 </p>
                             </div>
-                            <div class="text-item">
-                                <h3 class="name-header">Meditation App</h3>
-                                <p class="paragraph">App</p>
+                            <div class="portfolio-card">
+                                <h3 class="list-titles">Meditation App</h3>
+                                <p class="description-text">App</p>
                             </div>
                         </li>
-                        <li class="portfolio-item">
-                            <div class="portfolio-container">
-                                <img
-                                    srcset="
-                                        ./images/taxiservice.jpg 1x,
-                                        ./images/taxi.jpg        2x
-                                    "
-                                    src="./images/taxiservice.jpg"
-                                    alt="taxiservice"
-                                    width="360"
-                                />
-                                <p class="text-transition">
+                        <li class="portfolio-media">
+                            <div class="portfolio-image">
+                                <picture class="portfolio-photo">
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/taxi-mobile.jpg    1x,
+                                            ./images/taxi-mobile@2x.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/taxi-tablet.jpg    1x,
+                                            ./images/taxi-tablet@2x.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 1158px)"
+                                        srcset="
+                                            ./images/taxi-desktop.jpg    1x,
+                                            ./images/taxi-desktop@2x.jpg 2x
+                                        "
+                                    />
+                                    <img
+                                        src="./images/taxi-mobile.jpg"
+                                        alt="Inside of a car"
+                                    />
+                                </picture>
+
+                                <p class="inner-text">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
                                     Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App
                                 </p>
                             </div>
-                            <div class="text-item">
-                                <h3 class="name-header">Taxi Service</h3>
-                                <p class="paragraph">Marketing</p>
+                            <div class="portfolio-card">
+                                <h3 class="list-titles">Taxi Service</h3>
+                                <p class="description-text">Marketing</p>
                             </div>
                         </li>
-                        <li class="portfolio-item">
-                            <div class="portfolio-container">
-                                <img
-                                    srcset="
-                                        ./images/screenilustrations.jpg 1x,
-                                        ./images/screen.jpg             2x
-                                    "
-                                    src="./images/screenilustrations.jpg"
-                                    alt="screenilustrations"
-                                    width="360"
-                                />
-                                <p class="text-transition">
+                        <li class="portfolio-media">
+                            <div class="portfolio-image">
+                                <picture class="portfolio-photo">
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/screen-mobile.jpg    1x,
+                                            ./images/screen-mobile@2x.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/screen-tablet.jpg    1x,
+                                            ./images/screen-tablet@2x.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 1158px)"
+                                        srcset="
+                                            ./images/screen-desktop.jpg    1x,
+                                            ./images/screen-desktop@2x.jpg 2x
+                                        "
+                                    />
+                                    <img
+                                        src="./images/screen-mobile.jpg"
+                                        alt="Smartphone screen layouts"
+                                    />
+                                </picture>
+                                <p class="inner-text">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
                                     Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App
                                 </p>
                             </div>
-                            <div class="text-item">
-                                <h3 class="name-header">
+                            <div class="portfolio-card">
+                                <h3 class="list-titles">
                                     Screen Illustrations
                                 </h3>
-                                <p class="paragraph">Design</p>
+                                <p class="description-text">Design</p>
                             </div>
                         </li>
-                        <li class="portfolio-item">
-                            <div class="portfolio-container">
-                                <img
-                                    srcset="
-                                        ./images/onlinecourses.jpg 1x,
-                                        ./images/online.jpg        2x
-                                    "
-                                    src="./images/onlinecourses.jpg"
-                                    alt="onlinecourses"
-                                    width="360"
-                                />
-                                <p class="text-transition">
+                        <li class="portfolio-media">
+                            <div class="portfolio-image">
+                                <picture class="portfolio-photo">
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/online-mobile.jpg    1x,
+                                            ./images/online-mobile@2x.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/online-tablet.jpg    1x,
+                                            ./images/online-tablet@2x.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 1158px)"
+                                        srcset="
+                                            ./images/online-desktop.jpg    1x,
+                                            ./images/online-desktop@2x.jpg 2x
+                                        "
+                                    />
+                                    <img
+                                        src="./images/online-mobile.jpg"
+                                        alt="Girl with smartphone"
+                                    />
+                                </picture>
+                                <p class="inner-text">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
                                     Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App
                                 </p>
                             </div>
-                            <div class="text-item">
-                                <h3 class="name-header">Online Courses</h3>
-                                <p class="paragraph">Marketing</p>
+                            <div class="portfolio-card">
+                                <h3 class="list-titles">Online Courses</h3>
+                                <p class="description-text">Marketing</p>
                             </div>
                         </li>
                     </ul>
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-item">
-                    <a href="./index.html" class="logo-end"
-                        >Web<span class="white">Studio</span></a
+        <!--Dark end-->
+        <footer class="footer-background">
+            <div class="container container-footer">
+                <div class="footer-left">
+                    <a href="./index.html" class="logo logo-bottom"
+                        >Web<span class="logo-bright">Studio</span></a
                     >
-                    <p class="text">
+                    <p class="text-bright">
                         Increase the flow of customers and sales for your
                         business with digital marketing & growth solutions.
                     </p>
                 </div>
-                <div>
-                    <p class="socialmedia-footer">Social media</p>
-                    <ul class="socialmedia-footer-style">
-                        <li class="socialmedia-footer-size">
-                            <a class="socialmedia-footer-link" href="">
-                                <svg class="svg-style" width="24" height="24">
+                <div class="sm-footer-set">
+                    <p class="sm-footer-title">Social media</p>
+                    <ul class="icon-set-sm-footer">
+                        <li class="icon">
+                            <a
+                                href="https://www.instagram.com/"
+                                class="social-media-link footer-link"
+                                target="_blank"
+                            >
+                                <svg
+                                    class="icon-socials sm-footer"
+                                    width="24"
+                                    height="24"
+                                >
                                     <use
                                         href="./images/icons.svg#icon-instagram"
-                                    />
+                                    ></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="socialmedia-footer-size">
-                            <a class="socialmedia-footer-link" href="">
-                                <svg class="svg-style" width="24" height="24">
+                        <li class="icon">
+                            <a
+                                href="https://www.twitter.com/"
+                                class="social-media-link footer-link"
+                                target="_blank"
+                            >
+                                <svg
+                                    class="icon-socials sm-footer"
+                                    width="24"
+                                    height="24"
+                                >
                                     <use
                                         href="./images/icons.svg#icon-twitter"
-                                    />
+                                    ></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="socialmedia-footer-size">
-                            <a class="socialmedia-footer-link" href="">
-                                <svg class="svg-style" width="24" height="24">
+                        <li class="icon">
+                            <a
+                                href="https://www.facebook.com/"
+                                class="social-media-link footer-link"
+                                target="_blank"
+                            >
+                                <svg
+                                    class="icon-socials sm-footer"
+                                    width="24"
+                                    height="24"
+                                >
                                     <use
                                         href="./images/icons.svg#icon-facebook"
-                                    />
+                                    ></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="socialmedia-footer-size">
-                            <a class="socialmedia-footer-link" href="">
-                                <svg class="svg-style" width="24" height="24">
+                        <li class="icon">
+                            <a
+                                href="https://www.linkedin.com/"
+                                class="social-media-link footer-link"
+                                target="_blank"
+                            >
+                                <svg
+                                    class="icon-socials sm-footer"
+                                    width="24"
+                                    height="24"
+                                >
                                     <use
                                         href="./images/icons.svg#icon-linkedin"
-                                    />
+                                    ></use>
                                 </svg>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="footer-mail">
-                    <p class="subscribe">Subscribe</p>
-                    <form class="footer-form">
-                        <label class="footer-label">
+                <div class="sub">
+                    <p class="sm-footer-title">Subscribe</p>
+                    <form class="sub-form">
+                        <label for="mail" class="label-email">
                             <input
-                                name="email"
-                                class="input-footer"
                                 type="email"
+                                class="input-dark"
                                 placeholder="E-mail"
+                                id="mail"
+                                name="email"
+                                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                                required
                             />
                         </label>
-                        <button
-                            type="submit"
-                            id="modal"
-                            class="footer-subscribe-button"
-                        >
+                        <button class="sub-btn" type="submit">
+                            Subscribe
                             <svg
+                                class="icon-form-footer"
                                 width="24"
                                 height="24"
-                                class="footer-email-icon"
                             >
-                                <use
-                                    href="./images/icons.svg#icon_send.svg"
-                                ></use>
+                                <use href="./images/icons.svg#icon-fly"></use>
                             </svg>
-                            Subscribe
                         </button>
                     </form>
                 </div>
             </div>
         </footer>
-        <!--Modal--
-        <div class="containermodal is-open">
-            <div class="modal-box">
-                <button type="button" class="modal-button">
-                    <svg width="8" height="8" class="modal-icon-button">
-                        <use href="./images/symbol-defs.svg#icon-Vector"></use>
+
+        <!--Modal-->
+        <div class="backdrop is-open">
+            <div class="modal">
+                <button type="button" class="close-button">
+                    <svg class="icon-form-close" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
                     </svg>
                 </button>
-                <p class="modal-top-paragraph"></p>
-                <form>
-                    <div class="div-form">
-                        <label for="user-name" class="label-modal-class"
-                            >Name</label
-                        >
-                        <div class="div-label">
+                <p class="form-title">
+                    Leave your contacts and we will call you back
+                </p>
+                <form class="modal-form">
+                    <div class="form-field">
+                        <label for="user-name" class="field-descr">Name</label>
+                        <div class="field">
                             <input
-                                id="user-name"
+                                type="text"
                                 name="user-name"
-                                type="text"
-                                class="input"
+                                id="user-name"
+                                class="classic-field"
                             />
-                            <svg width="18" height="24" class="input-icon">
+                            <svg class="icon-form" width="18" height="24">
                                 <use
-                                    href="./images/symbol-defs.svg#icon-username"
+                                    href="./images/icons.svg#icon-person"
                                 ></use>
                             </svg>
                         </div>
                     </div>
-                    <div class="div-form">
-                        <label for="phone" class="label-modal-class"
-                            >Phone</label
-                        >
-                        <div class="div-label">
+                    <div class="form-field">
+                        <label for="phone" class="field-descr">Phone</label>
+                        <div class="field">
                             <input
-                                id="phone"
+                                type="tel"
                                 name="phone"
-                                type="text"
-                                class="input"
+                                id="phone"
+                                class="classic-field"
+                                pattern="^\d+$"
                             />
-                            <svg width="18" height="24" class="input-icon">
-                                <use
-                                    href="./images/symbol-defs.svg#icon-phone"
-                                ></use>
+                            <svg class="icon-form" width="18" height="24">
+                                <use href="./images/icons.svg#icon-phone"></use>
                             </svg>
                         </div>
                     </div>
-                    <div class="div-form">
-                        <label for="email" class="label-modal-class"
-                            >Email</label
-                        >
-                        <div class="div-label">
+                    <div class="form-field">
+                        <label for="email" class="field-descr">Email</label>
+                        <div class="field">
                             <input
-                                id="email"
+                                type="text"
                                 name="email"
-                                type="email"
-                                class="input"
+                                id="email"
+                                class="classic-field"
+                                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                                required
                             />
-                            <svg width="18" height="24" class="input-icon">
-                                <use
-                                    href="./images/symbol-defs.svg#icon-email"
-                                ></use>
+                            <svg class="icon-form" width="18" height="24">
+                                <use href="./images/icons.svg#icon-email"></use>
                             </svg>
                         </div>
                     </div>
-                    <div class="textarea">
-                        <label for="user-comment" class="label-modal-class"
-                            >Comment</label
-                        >
+                    <div class="form-field last">
+                        <label for="user-comment" class="field-descr">
+                            Comment
+                        </label>
                         <textarea
-                            id="user-comment"
+                            class="comment-section"
                             name="user-comment"
                             placeholder="Text input"
-                            class="textarea-content"
+                            id="user-comment"
                         ></textarea>
                     </div>
-                    <div class="checkbox-box">
+                    <div class="accept">
                         <input
-                            name="user-privacy"
-                            id="user-privacy"
                             type="checkbox"
+                            class="check visually-hidden"
+                            id="user-privacy"
                             value="true"
-                            class="modal-check visually-hidden"
+                            name="user-privacy"
+                            required
                         />
-                        <label for="user-privacy" class="label-modal-bottom">
-                            <span class="span-label-modal-bottom">
-                                <svg
-                                    width="10"
-                                    height="8"
-                                    class="privacy-policy-icon"
-                                >
+                        <label for="user-privacy" class="field-descr">
+                            <span class="privacy">
+                                <svg class="privacy-icon" width="10" height="8">
                                     <use
-                                        href="./images/symbol-defs.svg#icon-Vector"
+                                        href="./images/icons.svg#icon-vector"
                                     ></use>
                                 </svg>
                             </span>
                             I accept the terms and conditions of the
-                            <a href="" class="privacy-policy-link"
-                                >Privacy Policy</a
-                            >
+                            <a href="" class="privacy-link">Privacy Policy</a>
                         </label>
                     </div>
-                    <button class="send-button">Send</button>
+                    <button class="send-btn" type="submit" name="submit">
+                        Send
+                    </button>
                 </form>
             </div>
         </div>
